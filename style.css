@@ -1,0 +1,409 @@
+@font-face {
+    font-family: attila;
+    src: url(./attila.ttf);
+    
+}
+@font-face {
+    font-family: DancingScript-VariableFont_wght;
+    src: url(DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: havelock;
+    src: url(havelock.otf);
+}
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(Montserrat-Medium.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    color: #d1d1d1;
+    font-family: attila;
+}
+body{
+    background-color: #222;
+    overflow-x: hidden;
+}
+#main{
+    /* height: 100%; */
+    background-color: #222;
+    
+}
+#nav{
+    /* background-color: aliceblue; */
+    position: absolute;
+    min-height: 18vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    z-index: 99;
+    transition: all ease 2s;
+    letter-spacing: 2px;
+    font-size: 12px;
+    position: fixed;
+}
+#nav-ptr2{
+    display: flex;
+
+}
+#nav-ptr2 i{
+    margin-left: 50px;
+    font-size: 25px;
+}
+#fullscr{
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    transition: all ease 2s;
+    background-color:#dadada;
+    color: #dadada;
+    top: -100%;
+    z-index: 99;
+}
+#fullscr h1{
+    margin-top: 12%;
+    margin-left: 10%;
+    font-size: 12vw;
+}
+#lft{
+    margin-left: 11%;
+    font-size: 1.8vw;
+    line-height: 6.5vh;
+    font-family: Montserrat-Medium;
+    
+}
+#lft h3{
+    font-weight: 100;
+}
+#right{
+    position: absolute;
+    left: 40%;
+    top: 52%;
+    font-size: 1.8vw;
+    line-height: 6.5vh;
+    font-family: Montserrat-Medium;
+
+}
+#right h3{
+    font-weight: 100;
+}
+#page1{
+    min-height: 70vh;
+    width: 100vw;
+    position: relative;
+}
+#page1 h1{
+    font-size: 14vw;
+    position: absolute;
+    top: 20%;
+    left: 6%;
+    letter-spacing: 18px;
+}
+#page1 h2{
+    position: absolute;
+    top: 70%;
+    left: 24%;
+    font-size: 3vw;
+    width: 30vw;
+    line-height: 2.6vw;
+}
+#page1 h3{
+    position: relative;
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    width: 14vw;
+    font-size: 1.2vw;
+}
+#page2{
+    /* width: 100vw; */
+    min-height: 100vh;
+    position: relative;
+}
+#page2 img{
+    position: relative;
+    /* top:70%; */
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%,0) scale(0.8);
+}
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    color: #d1d1d1;
+    padding: 50px;
+    padding-top: 200px;
+    position: relative;
+}
+#page3 span{
+    font-family: DancingScript-VariableFont_wght;
+}
+#page3 h2{
+    font-size: 4.5vw;
+    width: 90vw;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 0;
+    
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    transform-origin: 100;
+    transform: rotateX(270deg);
+    text-align: center;
+}
+#page3 #btm{
+    position: absolute;
+    bottom: 0;
+    width: 80vw;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#page3 #line{
+    width: 25vw;
+    height: .4vh;
+    background-color: #d1d1d1;
+    
+}
+#page3 h4{
+    margin-left: 20%;
+    font-weight: 100;
+}
+#page{
+    min-height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cnt{
+    padding-top: 50px;
+    width: 90%;
+    min-height: 90vh;
+    font-family: havelock;
+}
+.ingredients{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: antiquewhite; */
+}
+.list{
+    display: flex;
+    width: 60%;
+    gap: 30px;
+}
+#page h6{
+    font-size: 1vw;
+}
+#page h2{
+    font-size: 5.5vw;
+    margin-left: 55px;
+    font-weight: bolder;
+    /* background-color: purple; */
+    width: 30vw;
+    letter-spacing: -.8vw;
+}
+#page i{
+    font-size: 6vw;
+    font-weight: 900;
+}
+#page4{
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+#page4 h1{
+    font-size: 7.6vw;
+    width: 70vw;
+    position: absolute;
+    top: 8%;
+    left: 5%;
+}
+#btmbox{
+    position: absolute;
+    bottom: 0;
+    min-height: 30vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box1{
+    width: 65vw;
+    min-height: inherit;
+    border: 1px solid #d1d1d1;
+    padding: 32px 60px;
+}
+#box1 h2{
+    font-size: 4vw;
+}
+#box2{
+    width: 35vw;
+    min-height: inherit;
+    border-top: #d1d1d1 1px solid;
+    border-right: #d1d1d1 1px solid;
+    border-bottom: #d1d1d1 1px solid;
+    padding: 54px 50px;
+}
+#box2 h3{
+    font-size: 1.8vw;
+}
+#page5{
+    min-height: 100vh;
+    width: 100%;
+    color: #d1d1d1;
+    position: relative;
+}
+#txt-5{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    min-height: 80vh;
+    overflow: hidden;
+}
+#page5 #bg{
+    min-height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+#txt-5 h2{
+    font-size: 4vw;
+    width: 60%;
+    text-align: center;
+}
+#txt-5 span{
+    font-family: DancingScript-VariableFont_wght;
+    font-size: 4.5vw;
+}
+#txt-5 h4{
+    font-size: 1.1vw;
+    width: 23%;
+    font-weight: lighter;
+    
+}
+#smiley{
+    /* background-color: aqua; */
+    margin-top: 70px;
+    
+}
+#page6{
+    min-height: 100vh;
+    width: 100%;
+    font-size: 6vw;
+    line-height: 20vh;
+}
+#page6 .one2{
+    color: transparent;
+    -webkit-text-stroke: 1px #adadad;
+}
+#page6 #slide1-of-h1{
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: default;
+}
+#page6 #slide2-of-h1{
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: default;
+}
+#page6 #slide1-of-h1::-webkit-scrollbar{
+    display: none;
+}
+#page6 #slide2-of-h1::-webkit-scrollbar{
+    display: none;
+}
+#page6 #slide2-of-h1 h1{
+    transform: translateX(-100%);
+}
+#page7{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#page7 h2{
+    margin-top: 11%;
+    margin-left: 30%;
+    font-size: 3vw;
+    width: 40%;
+    text-align: center;
+}
+#page7 span{
+    font-family: DancingScript-VariableFont_wght;
+    font-size: 4vw;
+}
+#page7 #elems{
+    width: 90%;
+    height: 37vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-top: 3%;
+    font-size: 2vw;
+}
+#elem1{
+    height: inherit;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#elem2{
+    width: 25%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#elem1 h3{
+    position: absolute;
+    z-index: 999;
+    position: relative;
+    font-size: 3vw;
+}
+#elem2 h3{
+    position: absolute;
+    z-index: 999;
+    position: relative;
+    font-size: 3vw;
+
+}
+#elem1 img{
+    height: 300px;
+    width: 300px;
+    transition: opacity ease-in 0.2s;
+    position: absolute;
+    transform: rotate(15deg);
+    opacity: 0;
+}
+#elem2 img{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    transition: opacity ease-in 0.2s;
+    transform: rotate(15deg);
+    opacity: 0;
+}
